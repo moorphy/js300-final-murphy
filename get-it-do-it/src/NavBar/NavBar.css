@@ -1,0 +1,12 @@
+.navigation-bar {
+    width:100%;
+    margin:auto 0;
+    list-style: none;
+    padding-top: 1.5em;
+}
+
+.navigation-bar li {
+    text-decoration: none;
+    display: inline;
+    padding: 0 1em;
+}

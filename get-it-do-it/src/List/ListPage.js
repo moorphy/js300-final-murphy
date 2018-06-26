@@ -38,13 +38,6 @@ class ListPage extends Component {
             };
         })
     }
-    removeList= (e) => {
-        e.preventDefault();
-        db.ref(`/users/${auth.currentUser.uid}`)
-        .on('value', (listItem)=>{
-            listItem.remove()
-            });
-    }
 
     addList = (e) => {
         e.preventDefault();
@@ -57,6 +50,8 @@ class ListPage extends Component {
             };
         })
     }
+    
+
 
     render() {
         return (
@@ -69,7 +64,7 @@ class ListPage extends Component {
 
                 <form className="listItemForm" onSubmit={this.addList}>
                     <textarea onChange={this.onInputChange} value={this.state.entryInput} /><br />
-                    <button className="listItembutton" type="submit">Add List</button>
+                    <button className="listItembutton" type="submit">Add Thingy</button>
                 </form>
             </div>
         );

@@ -4,7 +4,7 @@ import "../App.css"
 class HomePage extends Component {
     render() {
         return (
-            <div>
+            <div className="homepage">
             <h1>GET IT - DO IT</h1>
             <em><p>Log in to view your List</p></em>
                 </div>

@@ -1,19 +1,23 @@
 {
   "name": "get-it-do-it",
+  "homepage": "https://moorphy.github.io/js300-final-murphy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^5.1.0",
+    "firebase": "^6.2.4",
+    "gh-pages": "^2.0.1",
     "proptypes": "^1.1.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
